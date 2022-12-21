@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(91, 91, 165);
+            color: white;
+            font-size: 1.2em;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>iniciado os estudo Dom</h1>
+    <p>aqui vai o resultado</p>
+    <p class="isac">aprendendo a usar o <strong>Dom</strong> em javaScript</p>
+    <p>click em min</p>
+    <script>       
+        var p1 = window.document.getElementsByTagName('p') [0]
+        window.document.write(p1.innerHTML)
+
+       // var d = window.document.getElementById('isac')
+       // d.style.background = 'black'
+       //d.innerText = 'aguardando...'
+       // var d = window.document.getElementsByName('isac')[0]
+       // d.innerText = 'aguardando...'
+       // d.style.background = 'gray'
+       // d.style.color = 'black'
+
+        var pq = window.document.querySelector('p.isac')
+        pq.style.background = 'black'
+    </script>
+</body>
+</html>
