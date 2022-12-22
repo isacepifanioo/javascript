@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        input#itx1, input#itx2 {
+            width: 100px;
+            height: 20px;
+        }
+
+        div {
+            padding-top: 20px;
+        }
+
+        input#somar:hover{
+            transform: translate(5%, -5%);
+        }
+    </style>
+    <title>Somando numeros</title>
+</head>
+<body>
+    <h1>Somando os valores</h1>
+    <input type="number" name="tx1" id="itx1"> +
+    <input type="number" name="tx2" id="itx2">
+    <input type="button" value="Somar" id="somar" onclick="clicar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function clicar() {
+            var tx1 = window.document.getElementById('itx1')
+            var tx2 = window.document.getElementById('itx2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tx1.value)
+            var n2 = Number(tx2.value)
+            var s = n1 + n2
+            res.innerHTML = `Resultado ${n1} + ${n2} = ${s}`
+        }
+    </script>
+</body>
+</html>
