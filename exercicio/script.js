@@ -1,9 +1,19 @@
-var agora = new Date()
-var hora = agora.getHours()
-var res = window.document.getElementById('texto')
+function tempo() {
+    var data = new Date()
+    var hora = data.getHours()
+    var img = window.document.getElementById('imagem')
+    var msg = window.document.getElementById('msg')
+    msg.innerHTML = `são exatamente ${hora}`
+    
 
-hora = 7
-res.innerHTML = `<h1>Horario atual ${hora} horas</h1>`
-if(hora > 5 && hora < 12) {
-       
+    if (hora > 0 && hora <= 12) {
+
+        img.src = "imagens/dia.png"
+    } else if (hora >= 13 && hora <= 18) {
+        img.src =  "imagens/tarde.png"
+    } else {
+
+    }
+    
 }
+

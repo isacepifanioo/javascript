@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,16 +21,11 @@ section {
     margin: auto;
 }
 
-#texto {
+div#msg {
     color: black;
-    padding: 5px;
 }
 
 img {
-    position: absolute;
-    left: 170px;
-    top: 90px;
-
-    width: 50%;
+    width: 70%;
 }
 
