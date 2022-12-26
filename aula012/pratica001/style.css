@@ -23,9 +23,17 @@ section {
 
 div#msg {
     color: black;
+    font-size: 1.5em;
+    padding-top: 10px;
+    font-weight: bold;
 }
 
-img {
+section img {   
+    position: relative;
+    bottom: 10px;
+    display: block;
+    margin: auto;
+    padding-bottom: 80px;
     width: 70%;
 }
 
