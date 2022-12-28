@@ -6,7 +6,7 @@ function clickAqui() {
     } else {
         var n = Number(num.value)
         c = 1
-        while (c < n) {
+        while (c <= 10) {
             var item = document.createElement('option')
             item.innerHTML = `${n} x ${c} = ${n*c}`
             tab.appendChild(item)
