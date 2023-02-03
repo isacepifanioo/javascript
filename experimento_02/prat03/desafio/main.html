@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            background-image: url("https://cdn.pixabay.com/photo/2014/11/30/17/15/theater-551797_960_720.jpg");
+            background-color: #000000;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        .page-logo {
+            width: 200px;
+        }
+
+        .alura-logo {
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* body > img {
+        margin: 20px 15px;
+        } */
+
+        .container_todosFilmes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container_filme{
+            padding: 2%;
+            display: block;
+            max-width: 30%;
+        }
+
+        img {
+            max-height: 250px;
+            max-width: 100%;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+        }
+
+        p{
+            color: white;
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          MyFlix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      </div>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      </a>
+    <script src="main.js"></script>
+</body>
+</html>
