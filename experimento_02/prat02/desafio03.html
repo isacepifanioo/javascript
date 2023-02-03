@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+            background-image: url('https://img.freepik.com/vetores-premium/fundo-de-quadro-de-matematica_1995-357.jpg?w=2000');
+            background-position: center center;          
+            background-size: cover;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numeroEscolhido = parseInt(Math.random() * 1001)
+        var cont = 0
+        var res = prompt('Desaja iniciar o jogo [s/n]')
+        if (res == 's'){
+            while (chute != numeroEscolhido) { 
+                var chute = prompt('Escolha um numero de 1 a 1000')
+                if (chute == numeroEscolhido) {
+                    alert('Você acertou!')
+                } else if (chute > numeroEscolhido) {
+                    alert('Errou... O número estar abaixo de ' + chute + '! Tente novamente!')
+                } else if (chute < numeroEscolhido) {
+                    alert('Errou... O número estar a cima de ' + chute + '! Tente novamente!')
+                }
+                cont++
+                alert('Você tentou ' + cont + ' vez')
+            }
+        } else {
+            alert('Tudo ok!')
+        }
+    </script>
+</body>
+</html>

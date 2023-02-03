@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210814/pngtree-colorful-geometric-symbols-education-math-formula-background-image_763119.jpg');
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
+    <title>mentalista</title>
+</head>
+<body>
+    <script>
+        var numeroEscolhido = parseInt(Math.random() * 1001)
+        chute = 0
+        while (chute != numeroEscolhido) {
+            var chute = prompt('Escolha um número de 1 a 1000');
+            
+            if (chute == numeroEscolhido) {
+                alert('Acertou');
+                break
+            } else if (chute > numeroEscolhido) {
+                alert('Errou... Tente um numero mais baixo.');
+            } else if (chute < numeroEscolhido) {
+                alert('Errou... Tente um número mais alto.');
+            }
+        }
+    </script>
+</body>
+</html>
