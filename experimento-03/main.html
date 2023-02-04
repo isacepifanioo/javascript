@@ -46,6 +46,12 @@
             border: none;
             padding: 10px;
             background-color: rgb(255, 136, 0);
+            font-weight: bold;       
+        }
+
+        input[type='button']:hover {
+            transform: translate(37px, -3px);
+            transition: transform 0.2s ease-in-out;
         }
     </style>
     <title>Filmes Favoritos</title>
@@ -54,10 +60,11 @@
     <h1>Filmes Favoritos</h1>
     <h3>Ciner Dev</h1>
             <div id="boxText">
-                <input type="text" name="filmesFavorito" id="filmesFavorito">
-                <input type="text" name="bannerFilmes" id="bannerFilmes" style="margin-top: 5px;">
+                <input type="text" name="filmesFavorito" id="filmesFavorito" placeholder="Endereço Da Imagem">
+                <input type="text" name="bannerFilmes" id="bannerFilmes" style="margin-top: 5px;" placeholder="Endereço Do Treile">
                 <input type="button" value="Verificar o Filme" style="margin:10px;">
             </div>
     <div id="cantoDoFilmes"></div>
+    <script src="main.js"></script>
 </body>
 </html>
