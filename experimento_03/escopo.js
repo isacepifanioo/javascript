@@ -7,3 +7,4 @@ function exibirNome() {
 
 console.log(nome)
 exibirNome()
+console.log(nome)
