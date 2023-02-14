@@ -32,13 +32,13 @@ let informação = [
 ]
 console.log('=================================')
 for (let i = 0; i < informação.length; i++) {
-    let unica = informação[i]
+    let unico = informação[i]
     if (true) {
         console.log(informação[i])
-        console.log(unica.nome)
-        console.log(unica.idade)
-        console.log(unica.genero)
-        console.log(unica.email)
+        console.log(unico.nome)
+        console.log(unico.idade)
+        console.log(unico.genero)
+        console.log(unico.email)
         console.log('=================================')
     }
 }
