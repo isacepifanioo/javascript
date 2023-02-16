@@ -1,26 +1,31 @@
-// No javaScript podemos ter varios escopos;
-// O global que iniciado em toda a aplicação;
-// E os locais que podem existir em várias instruções como as funções 
+// O parseFloat
 
-var a = 1; // escopo global
+// float são numero real
 
-var b = 5; // escopo global
+console.log(parseFloat('23.2')) // ele tranforma numero que estar em string e number
+console.log(Number.parseFloat(87.5)) 
 
-console.log(a, b);
+// O parseInt
 
-function texte() {
+// int são numeros inteiro
 
-    var z = 0 // escopo local
+console.log(parseInt('83.3')) // ele tranforma numero que estar em string e number e tira a casa decimal
+console.log(Number.parseInt(65.23)) // ele tirou so a casa decimal
 
-    console.log(z)
+// toFixed
 
-    console.log(b, a)
+console.log(34.67899876543.toFixed(1)) // toFixed => ele vai arredondar o numero e colocar quantas casa decimais você quer!
 
-}
+// isNaN
 
+// isNaN => que dizer não e um numero
 
-texte()
+console.log(isNaN("teste")) // true. porque 'teste' não e um numero
+console.log(isNaN(21)) // false. porque 21 e um numero
+console.log(isNaN('23')) // false. porque '23' e um numero. mesmo sendo string
 
-//console.log(z) // <= isso da erro porque não existe a variavel "z"
+// MAX_VALUE e MIN_VALUE
 
-// O escopo local que estar dentro da função, não pode ter acesso dentro no escopo global
+console.log(Number.MAX_VALUE) // aqui e o maximo valor do js. passou disso vai da +Infinity
+console.log(Number.MIN_VALUE) // aqui e o minimo valor do js. passou disso vai da -Infinity
+
