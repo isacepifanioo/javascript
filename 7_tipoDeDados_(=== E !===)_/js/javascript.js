@@ -11,7 +11,7 @@ if (numero === 5) { // comparação === ele vai compara se o dipo de dados e o m
 
 let numero2 = 10
 
-if (numero2 !== '10') {
+if (numero2 !== '10') { // comparação !== ele vai compara se o dipo de dados e diferente
     console.log('Esse numero eo 10')
 }
 
