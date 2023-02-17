@@ -26,4 +26,5 @@ let pai = tagH1.parentNode // parentNode => E para dizer automatico que e o pai 
 // trocar os elementos
 
 
-pai.replaceChild(tagH3, tagH1)
+pai.replaceChild(tagH3, tagH1) 
+console.log('hellow wrold')
