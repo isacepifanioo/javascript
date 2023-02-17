@@ -20,7 +20,7 @@ let tagH1 = document.querySelector('h1')
 // selecionar o pai do
 
 
-let pai = tagH1.parentNode
+let pai = tagH1.parentNode // parentNode => E para dizer automatico que e o pai da tagH1
 
 
 // trocar os elementos
