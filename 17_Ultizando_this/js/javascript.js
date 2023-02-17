@@ -1,17 +1,20 @@
 let dados = {
     nome: 'isac',
     idade: 23,
-    falar: function() { // function dentro do object e um metodo
+    falar: function() { 
         console.log('Hello World')
     },
-    soma: function(a, b) { 
-        return a + b
+    falar2: function () {
+       console.log('Ola ' + this.nome + ' Seja bem vindo')
+    },
+    aniversario: function() {
+        return this.idade + 1
     }
 }
 
-console.log(dados.nome) 
+dados.falar2()
 
-dados.falar()
+let id = dados.aniversario()
+console.log(id)
 
-let soma = dados.soma(6, 5)
-console.log(soma)
+console.log(this) // this => tem acesso a tudo que estar dentro do window seja comando do proprio javaScript ou ate msm minhas proprias variaveis
