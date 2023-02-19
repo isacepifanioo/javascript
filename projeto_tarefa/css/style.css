@@ -10,7 +10,6 @@ body {
     padding: 30px;
 }
 
-
 #conteiner {
     width: 500px;
     margin-left: auto;
@@ -47,14 +46,14 @@ body {
 
 #add-btn {
     position: absolute;
+    background: white;
     border: 1px solid #0a796e;
-    background-color: white;
+    cursor: pointer;
+    transition: .5s;
     width: 60px;
     height: 53px;
     top: 0;
     right: 0;
-    cursor: pointer;
-    transition: .5s;
     padding-top: 3px;
 }
 
@@ -67,12 +66,12 @@ ion-icon {
     font-size: 25px;
 }
 
-.task-box {
+#lista {
     list-style: none;
     padding-left: 0;
 }
 
-#task-lista li {
+#lista li {
     text-align: left;
     height: 50px;
     line-height: 50px;
@@ -86,11 +85,11 @@ ion-icon {
     font-weight: bold;
 }
 
-#task-lista span {
+#lista span {
     font-size: 18px;
 }
 
-#task-lista ion-icon {
+#lista ion-icon {
     position: absolute;
     top: 0;
     height: 40px;
@@ -123,8 +122,8 @@ ion-icon {
     display: none;
 }
 
-.feito {
-    background-color: #0a796e;
+#lista li.feito {
+    background: #0a796e;
     color: white;
     text-decoration: line-through;
 }
