@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-image: linear-gradient(to right, #2a8c61, #139f3b, #15a293);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+#conteiner {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tasks form */
+
+#task-header {
+    margin-top: 40px;
+}
+
+#add-task-form {
+    position: relative;
+}
+
+#add-task-form input {
+    box-sizing: border-box;
+    border: 1px solid #0a796e;
+    background: white;
+    color: #0a796e;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#add-task-form input::placeholder {
+    color: #0a796e;
+}
+
+#add-task-form input:focus {
+    outline: none;
+}
+
+#add-btn {
+    position: absolute;
+    border: 1px solid #0a796e;
+    background-color: white;
+    width: 60px;
+    height: 53px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: .5s;
+    padding-top: 3px;
+}
+
+#add-btn:hover {
+    background-color: #0a796e;
+    color: white;
+}
+
+ion-icon {
+    font-size: 25px;
+}
+
+.task-box {
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-lista li {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #0a796e;
+    background-color: white;
+    color: #0a796e;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#task-lista span {
+    font-size: 18px;
+}
+
+#task-lista ion-icon {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+.done {
+    right: 40px;
+}
+
+.done:hover {
+    background-color: #09e01b;
+    color: white;
+}
+
+.hide {
+    right: 0;
+}
+
+.hide:hover {
+    background-color: red;
+    color: white;
+}
+
+
+.esconder {
+    display: none;
+}
+
+.feito {
+    background-color: #0a796e;
+    color: white;
+    text-decoration: line-through;
+}
+
+
