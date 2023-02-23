@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');  /*  font do cabeçalho  */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap'); /*  font do conteudo  */ 
+
+body {
+    font-family:'Tilt Warp', cursive;;
+    padding: 0;
+    margin: 0;
+    color: red;
+    background-image: url('https://img.freepik.com/vetores-gratis/vetor-de-ilustracao-de-fundo-verde-de-conexao-em-todo-o-mundo_53876-61767.jpg?w=360');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+header {
+    font-family: 'Bebas Neue', cursive;
+    background-color: black;
+    border-bottom: 2px solid red;
+    padding: 5px;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: rgb(255, 255, 255);
+}
+
+
+#links {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#links a {
+    text-decoration: none; 
+    padding: 5px;
+    border-bottom: 2px solid red;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+#links a:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+#container-Formulario {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;   /* erro  */
+    margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 1px black;
+}
+
+#formularo {
+    columns: 2;
+    padding: 10px;
+}
+
+input {
+    text-align: center;
+    padding: 13px;
+    width: 150%;
+    margin-left: 27%;
+    font-size: 20px;   
+}
+
+input:focus {
+    outline: none;
+}
+
+#url-filmes {
+    margin-top: 10px;
+}
+
+#butão {
+    /**/ 
+    color: red;
+}
