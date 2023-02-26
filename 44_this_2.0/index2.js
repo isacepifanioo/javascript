@@ -28,5 +28,5 @@ function comunicar() {
 
 }
 
-dados2.comunicar = comunicar
-dados2.comunicar()
+dados3.comunicar = comunicar
+dados3.comunicar()
