@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.divDaCaixa {
+    background-color: darkgray;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(85, 85, 85);
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#btn-copia {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border:1px solid rgb(3, 21, 185);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.caixa {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 300px;
+    height: 500px;
+}
+
+
+.selecionado {
+    background-color: rgb(134, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    color: white;
+}
