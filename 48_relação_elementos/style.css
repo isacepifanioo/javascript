@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    margin: 50px;
+    padding: 0;
+}
+
+div#caixa {
+    position: absolute;
+    padding: 50px;
+    border: 2px solid black;
+}
+
+.curso {
+    background-color: darkgray;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(82, 82, 82);
+}
