@@ -4,12 +4,17 @@ const c1_2=document.querySelector("#c1_2")
 const cursos=["HTML","CSS","Javascript","PHP","React","MySQL","ReactNative"]
 const btnCursoSelecionado=document.getElementById("btnCursoSelecionado")
 const btnRemove = document.querySelector('#btnRemoverCurso')
+const btnAddAnstes = document.querySelector('#btnAdicionarNovoCursoAntes')
+const btnAddDepois = document.querySelector('#btnAdicionarNovoCursoDepois')
+const nomeCurso = document.querySelector('#nomeCurso')
 
-cursos.map((el,chave)=>{
+let indeci = 0
+
+const criaNovoCurso = (cursos) => {
     const novoElemento=document.createElement("div")
-    novoElemento.setAttribute("id","c"+chave)
+    novoElemento.setAttribute("id","c"+indeci)
     novoElemento.setAttribute("class","curso c1")
-    novoElemento.innerHTML=el
+    novoElemento.innerHTML=cursos
 
     const comandos=document.createElement("div")
     comandos.setAttribute("class","comandos")
@@ -21,17 +26,14 @@ cursos.map((el,chave)=>{
     comandos.appendChild(rb)
 
     novoElemento.appendChild(comandos)
+    return novoElemento
+}
 
+cursos.map((el,chave)=>{
+    const novoElemento = criaNovoCurso(el)
     caixaCursos.appendChild(novoElemento)
-    
+    indeci++
 })
-
-// parentNode
-// childNodes[nodenumber]
-// firstChild
-// lastChild
-// nextSibling
-// previousSibling
 
 const nomeDoRadio = () => {
     const todosRadio = [...document.querySelectorAll('input[type=radio]')]
@@ -65,6 +67,44 @@ btnRemove.addEventListener('click', () => {
     
 })
 
+btnAddAnstes.addEventListener('click', (evt) => {
+
+    try {
+        if (nomeCurso.value != "") {
+            const rs = nomeDoRadio()
+            const nomeDoCurso = rs.parentNode.parentNode
+            const novoCurso = criaNovoCurso(nomeCurso.value)
+            caixaCursos.insertBefore(novoCurso, nomeDoCurso)
+        }  else {
+            alert('Adicione o nome do curso!')
+        }
+    } catch (ex) {
+        alert('[ERRO] Você precisa adiciona uma das opção ')
+    }
+
+})
+
+btnAddDepois.addEventListener('click', (evt) => {
+
+    try {
+        if (nomeCurso.value != "") {
+            const rs = nomeDoRadio()
+            const nomeDoCurso = rs.parentNode.parentNode.nextSibling
+            const novoCurso = criaNovoCurso(nomeCurso.value)
+            caixaCursos.insertBefore(novoCurso, nomeDoCurso)
+        }  else {
+        alert('Adicione o nome do curso!')
+        }
+    } catch (ex) {
+        alert('[ERRO] Você precisa adiciona uma das opção ')
+    }
+
+})
 
 
-
+// parentNode
+// childNodes[nodenumber]
+// firstChild
+// lastChild
+// nextSibling
+// previousSibling
