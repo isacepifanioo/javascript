@@ -93,7 +93,7 @@ btnAddDepois.addEventListener('click', (evt) => {
             const novoCurso = criaNovoCurso(nomeCurso.value)
             caixaCursos.insertBefore(novoCurso, nomeDoCurso)
         }  else {
-        alert('Adicione o nome do curso!')
+            alert('Adicione o nome do curso!')
         }
     } catch (ex) {
         alert('[ERRO] Você precisa adiciona uma das opção ')
