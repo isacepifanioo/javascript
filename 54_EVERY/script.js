@@ -1,4 +1,6 @@
-// metodo find() => ele permite pesquisar os elemento dentro do determiando array e ele retorna o resultado desse array quando ele encontrar
+// o metodo every() => o metodo every ele vai verificar se dentro da minha array ta conforme eu queira
+// por exemplo eu quero indentificar se dentro da minha array tem so idade >= 18, então ele vai me dizer 
+// se tive todoas maiores que 18 ele vai me true senão ele retorna false
 
 const p_array = window.document.getElementById('arrayJs')
 const btn_pesquisar = window.document.getElementById('butão')
@@ -18,9 +20,6 @@ btn_pesquisar.addEventListener('click', (evt) => {
         return el>=18
     })
     console.log(res)
-    if (res) {
-        resposta.textContent = 'tudo ok'
-    } 
-    
+
 })
 
