@@ -27,3 +27,4 @@ let pai = tagH1.parentNode // parentNode => E para dizer automatico que e o pai 
 
 
 pai.replaceChild(tagH3, tagH1) 
+//
